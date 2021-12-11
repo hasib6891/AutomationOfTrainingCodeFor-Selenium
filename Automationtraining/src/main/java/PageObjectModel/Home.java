@@ -8,7 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 public class Home {
 	public WebDriver driver;
 		
-		@FindBy(id="nav-link-accountList-nav-line-1")WebElement Sign;
+		@FindBy(id="nav-link-accountList-nav-line-1")
+		WebElement Sign;
 		
 public Home(WebDriver driver) {		
 		this.driver=driver;
@@ -17,9 +18,8 @@ public Home(WebDriver driver) {
 
 public void SignToClick() {	
 		Sign.click();
-			
-		
-}		
+					
+		}		
 }
 
 

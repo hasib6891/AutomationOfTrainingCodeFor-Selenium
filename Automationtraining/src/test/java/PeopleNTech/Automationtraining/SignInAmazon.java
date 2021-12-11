@@ -15,15 +15,15 @@ public class SignInAmazon {
 	
 	@Test
 	public void f() throws InterruptedException {
-		Home ob= new Home(driver);
-		ob.SignToClick();
-		SignInPage it =new SignInPage(driver);
 		
+		Home object1= new Home(driver);
+		object1.SignToClick();
 		Thread.sleep(5000);
-		it.EmailFieldSendKeys();
 		
-		Thread.sleep(5000);
-		it.ContinueButtonClick();
+		SignInPage object2 =new SignInPage(driver);
+			object2.EmailFieldSendKeys();
+Thread.sleep(2000);
+			object2.ContinueButtonClick();
   }
 	
   @BeforeMethod
